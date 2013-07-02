@@ -807,7 +807,7 @@ Assuming such a type exists, we define functions
   p&:(D\to \prop) \to (D\to\prop)\to \prop,\\
   \intertext{by}
   r(k(\theta)) &\defeq \theta,\\
-  f(\delta) &\defeq k(\lam{x} (x=\delta)),\\
+  f(\delta) &\defeq k(\lam{x} (x=\delta)),\\ % XXX why is this well-typed? (because Prop is a set(?) and because then D -> Prop is a set(?))
   p(\delta) &\defeq \lam{x} \delta(f(x)).
 \end{align*}
 Here $r$ is defined by the recursion principle of $D$, while $f$ and $p$ are defined explicitly.
